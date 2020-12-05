@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>pm2基础 | 大芒果</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    <link rel="icon" href="https://shenggao.oss-cn-beijing.aliyuncs.com/info/head.jpg">
+    <meta name="description" content="大芒的博客果">
+    
+    <link rel="preload" href="/assets/css/0.styles.992cb7aa.css" as="style"><link rel="preload" href="/assets/js/app.5585b3f9.js" as="script"><link rel="preload" href="/assets/js/2.b244e696.js" as="script"><link rel="preload" href="/assets/js/12.5a82f935.js" as="script"><link rel="prefetch" href="/assets/js/10.84ec4af0.js"><link rel="prefetch" href="/assets/js/11.b82a4cc7.js"><link rel="prefetch" href="/assets/js/13.8fb03669.js"><link rel="prefetch" href="/assets/js/14.a65a4b04.js"><link rel="prefetch" href="/assets/js/15.820a25bd.js"><link rel="prefetch" href="/assets/js/16.8f6e6bdb.js"><link rel="prefetch" href="/assets/js/17.aefa299d.js"><link rel="prefetch" href="/assets/js/18.d02b08a2.js"><link rel="prefetch" href="/assets/js/19.0f5db60b.js"><link rel="prefetch" href="/assets/js/20.01c484b7.js"><link rel="prefetch" href="/assets/js/21.23d318b7.js"><link rel="prefetch" href="/assets/js/22.8d4451d0.js"><link rel="prefetch" href="/assets/js/23.e93d754a.js"><link rel="prefetch" href="/assets/js/24.f062c1c5.js"><link rel="prefetch" href="/assets/js/25.74376702.js"><link rel="prefetch" href="/assets/js/26.0173a179.js"><link rel="prefetch" href="/assets/js/27.cda7894e.js"><link rel="prefetch" href="/assets/js/28.30a31dc3.js"><link rel="prefetch" href="/assets/js/29.d5de6641.js"><link rel="prefetch" href="/assets/js/3.941c99e3.js"><link rel="prefetch" href="/assets/js/30.c549cc57.js"><link rel="prefetch" href="/assets/js/31.06fe8ca4.js"><link rel="prefetch" href="/assets/js/32.e5bff65c.js"><link rel="prefetch" href="/assets/js/33.349e8ed7.js"><link rel="prefetch" href="/assets/js/34.5a8cb550.js"><link rel="prefetch" href="/assets/js/4.09fd2c39.js"><link rel="prefetch" href="/assets/js/5.fc791712.js"><link rel="prefetch" href="/assets/js/6.ffe6f60a.js"><link rel="prefetch" href="/assets/js/7.d0c6d7a4.js"><link rel="prefetch" href="/assets/js/8.fce5d855.js"><link rel="prefetch" href="/assets/js/9.8432ac8c.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.992cb7aa.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="https://shenggao.oss-cn-beijing.aliyuncs.com/info/head.jpg" alt="大芒果" class="logo"> <span class="site-name can-hide">大芒果</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/fronted/" class="nav-link">
+  前端
+</a></div><div class="nav-item"><a href="/backend/" class="nav-link router-link-active">
+  后端
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Language Menu" class="dropdown-title"><span class="title">计算机</span> <span class="arrow down"></span></button> <button type="button" aria-label="Language Menu" class="mobile-dropdown-title"><span class="title">计算机</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/language/chinese/" class="nav-link">
+  计算机组成原理
+</a></li><li class="dropdown-item"><!----> <a href="/language/japanese/" class="nav-link">
+  操作系统
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/fronted/" class="nav-link">
+  前端
+</a></div><div class="nav-item"><a href="/backend/" class="nav-link router-link-active">
+  后端
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Language Menu" class="dropdown-title"><span class="title">计算机</span> <span class="arrow down"></span></button> <button type="button" aria-label="Language Menu" class="mobile-dropdown-title"><span class="title">计算机</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/language/chinese/" class="nav-link">
+  计算机组成原理
+</a></li><li class="dropdown-item"><!----> <a href="/language/japanese/" class="nav-link">
+  操作系统
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>node</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>nginx</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>pm2</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/backend/pm2/pm2基础.html" class="active sidebar-link">pm2基础</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="pm2基础"><a href="#pm2基础" class="header-anchor">#</a> pm2基础</h1> <h2 id="_1-进程开启"><a href="#_1-进程开启" class="header-anchor">#</a> 1 进程开启</h2> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token comment"># 开启一个进程服务</span>
+pm2 start app.js
+
+<span class="token comment"># Specify an app name</span>
+--name <span class="token operator">&lt;</span>app_name<span class="token operator">&gt;</span>
+
+<span class="token comment"># Watch and Restart app when files change</span>
+--watch
+
+<span class="token comment"># Set memory threshold for app reload</span>
+--max-memory-restart <span class="token operator">&lt;</span>200MB<span class="token operator">&gt;</span>
+
+<span class="token comment"># Specify log file</span>
+--log <span class="token operator">&lt;</span>log_path<span class="token operator">&gt;</span>
+
+<span class="token comment"># Pass extra arguments to the script</span>
+-- arg1 arg2 arg3
+
+<span class="token comment"># Delay between automatic restarts</span>
+--restart-delay <span class="token operator">&lt;</span>delay <span class="token keyword">in</span> ms<span class="token operator">&gt;</span>
+
+<span class="token comment"># Prefix logs with time</span>
+--time
+
+<span class="token comment"># Do not auto restart app</span>
+--no-autorestart
+
+<span class="token comment"># Specify cron for forced restart</span>
+--cron <span class="token operator">&lt;</span>cron_pattern<span class="token operator">&gt;</span>
+
+<span class="token comment"># Attach to application log</span>
+--no-daemon
+</code></pre></div><h2 id="_2-管理进程"><a href="#_2-管理进程" class="header-anchor">#</a> 2 管理进程</h2> <div class="language-shell extra-class"><pre class="language-shell"><code>$ pm2 restart app_name
+$ pm2 reload app_name
+$ pm2 stop app_name
+$ pm2 delete app_name
+</code></pre></div><h2 id="_3-列举管理的应用"><a href="#_3-列举管理的应用" class="header-anchor">#</a> 3 列举管理的应用</h2> <div class="language-shell extra-class"><pre class="language-shell"><code>pm2 <span class="token punctuation">[</span>list<span class="token operator">|</span><span class="token function">ls</span><span class="token operator">|</span>status<span class="token punctuation">]</span>
+</code></pre></div><h2 id="_4-日志查看"><a href="#_4-日志查看" class="header-anchor">#</a> 4 日志查看</h2> <div class="language-shell extra-class"><pre class="language-shell"><code>pm2 logs
+pm2 logs --lines <span class="token number">200</span>
+</code></pre></div><h2 id="_5-命令行基础看板"><a href="#_5-命令行基础看板" class="header-anchor">#</a> 5 命令行基础看板</h2> <div class="language-shell extra-class"><pre class="language-shell"><code>pm2 monit
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/backend/nginx/nginx搭建web服务器.html" class="prev">
+        nginx基础
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.5585b3f9.js" defer></script><script src="/assets/js/2.b244e696.js" defer></script><script src="/assets/js/12.5a82f935.js" defer></script>
+  </body>
+</html>
